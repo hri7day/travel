@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body>
+    <!-- navbar -->
+    <div class="sidebar">
+        <div class="profile">
+            <!-- <img src="images/anklegaming logo.png" alt="Profile"> -->
+            <h2>Welcome Admin</h2>
+            <!-- <p class="online">● Online </p> -->
+        </div>
+        <div class="menu">
+            <div class="dashboard-item" onclick="location.href='index.html'"><i class="fas fa-tachometer-alt"></i> Dashboard</div>
+        </div>
+    </div>
+    <!-- dashboard divs -->
+    <div class="content">
+        <h1>Dashboard</h1>
+        <div class="dashboard-row">
+            <div class="dashboard-card blue" onclick="location.href='add-user.html'"><i class="fas fa-user-plus"></i> Add User</div>
+            <div class="dashboard-card green" onclick="location.href='add-vendor.html'"><i class="fas fa-store"></i> Add Vendor</div>
+            <div class="dashboard-card red" onclick="location.href='add-hotel.html'"><i class="fas fa-hotel"></i> Add Hotel</div>
+        </div>
+        <div class="dashboard-row">
+            <div class="dashboard-card purple" onclick="location.href='see-user.html'"><i class="fas fa-users"></i> See Users</div>
+            <div class="dashboard-card blue" onclick="location.href='see-vendor.html'"><i class="fas fa-store-alt"></i> See Vendors</div>
+            <div class="dashboard-card green" onclick="location.href='see-hotel.html'"><i class="fas fa-hotel"></i> See Hotels</div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.dashboard-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.1)';
+                card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.25)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+                card.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+            });
+        });
+    </script>
+</body>
+</html>
+
+<?php ?>

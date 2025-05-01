@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-user</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+      *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+        
+/* table css */
+.table-container {
+  width: 80vw;
+  margin-left: 10px;
+  margin-top: 30px;
+    /* overflow-x: auto;  */
+}
+.table-container h2{
+font-size: 2em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+@media (max-width: 600px) {
+  table {
+      font-size: 14px;
+  }
+  th, td {
+      padding: 8px;
+  }
+}
+    </style>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="sidebar">
+    <div class="profile">
+        <!-- <img src="images/anklegaming logo.png" alt="Profile"> -->
+        <h2>Welcome Admin</h2>
+        <!-- <p class="online">● Online </p> -->
+    </div>
+    <div class="menu">
+        <div class="dashboard-item" onclick="location.href='index.html'"><i class="fas fa-tachometer-alt"></i> Dashboard</div>
+    </div>
+</div>
+</body>
+</html>
+
+<div class="table-container">
+  <h2>  Users Details </h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>City</th>
+            <th>Place</th>
+            <th>Payment Method</th>
+        </tr>
+
+
+        <tr>
+          <td>1</td>
+          <td>Amit</td>
+          <td>amit@gmail.com</td>
+          <td>899989988</td>
+          <td>Delhi</td>
+          <td>Red fort</td>
+          <td>Credit card</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>sameer</td>
+          <td>sameer@gmail.com</td>
+          <td>898803322</td>
+          <td>mumbai</td>
+          <td>beach</td>
+          <td>Google pe</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Vivek</td>
+          <td>vivek@gmail.com</td>
+          <td>277838499</td>
+          <td>rajasthan</td>
+          <td>desert</td>
+          <td>Net Banking</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>ravi</td>
+          <td>ravi@gmail.com</td>
+          <td>3228384339</td>
+          <td>Bihar</td>
+          <td>Village</td>
+          <td>Paytm</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>Amit</td>
+          <td>amit@gmail.com</td>
+          <td>899989988</td>
+          <td>Delhi</td>
+          <td>Red fort</td>
+          <td>Credit card</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td>sameer</td>
+          <td>sameer@gmail.com</td>
+          <td>898803322</td>
+          <td>mumbai</td>
+          <td>beach</td>
+          <td>Google pe</td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+          <td>Vivek</td>
+          <td>vivek@gmail.com</td>
+          <td>277838499</td>
+          <td>rajasthan</td>
+          <td>desert</td>
+          <td>Net Banking</td>
+        </tr>
+
+        <tr>
+          <td>8</td>
+          <td>ravi</td>
+          <td>ravi@gmail.com</td>
+          <td>3228384339</td>
+          <td>Bihar</td>
+          <td>Village</td>
+          <td>Paytm</td>
+        </tr>
+
+ </table>
+</body>
+</html>
+
+
+<!-- <?php
+        // Database connection
+        $con = new mysqli('localhost', 'root', '', 'travle');
+
+        // Check connection
+        if ($con->connect_error) {
+            die("Connection failed: " . $con->connect_error);
+        }
+
+        // Fetch data from database
+        $sql = "SELECT * FROM work";
+        $result = $con->query($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr>
+                        <td>" . $row["id"] . "</td>
+                        <td>" . $row["username"] . "</td>
+                        <td>" . $row["email"] . "</td>
+                        <td>" . $row["number"] . "</td>
+                        <td>" . $row["city"] . "</td>
+                        <td>" . $row["place"] . "</td>
+                        <td>" . $row["payment"] . "</td>
+                      </tr>";
+            }
+        } else {
+            echo "<tr><td colspan='7'>No data found</td></tr>";
+        }
+
+        $con->close();
+        ?>
+    </table>
+</div> -->
+

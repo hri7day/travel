@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-user</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Background color ko halka grayish-white banaya */
+.forms {
+  background-color:rgb(235, 234, 240); /* White se thoda kam white */
+  margin: auto;
+  width: 80%;
+  max-width: 500px; /* Form ki max width set ki */
+  padding: 25px; /* Padding adjust ki */
+  border-radius: 20px;
+  border: 1px solid blue;
+  box-shadow: 9px 8px 10px rgba(0, 0, 0, 0.2); /* Thoda shadow effect */
+}
+
+/* Labels aur headings */
+label {
+  color: #333; /* Thoda dark gray color */
+}
+
+.forms h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: blue;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid blue;
+  background-color: white;
+  box-shadow:9px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group{
+  padding: 7px;
+}
+
+input:hover{
+  border: 1px solid blue;
+}
+
+/* Submit button ko center aur responsive banaya */
+.btn {
+  display: block;
+  width: 30%; /* Button ka width adjust kiya */
+  max-width: 200px; /* Button ka max width set ki */
+  margin: 20px auto; /* Auto se center me fix kiya */
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .forms {
+    width: 90%; /* Chhoti screen par width adjust */
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .submit-btn {
+    width: 80%; /* Button ko chhoti screen par bada kiya */
+  }
+}
+
+/* dropdown css */
+.form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #007bff;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    .form-group select:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    }
+
+    </style>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="sidebar">
+    <div class="profile">
+        <!-- <img src="images/anklegaming logo.png" alt="Profile"> -->
+        <h2>Welcome Admin</h2>
+        <!-- <p class="online">● Online </p> -->
+    </div>
+    <div class="menu">
+        <div class="dashboard-item" onclick="location.href='index.html'"><i class="fas fa-tachometer-alt"></i> Dashboard</div>
+    </div>
+    </div>
+
+<!-- forms -->
+
+<div class="forms">
+    <h2>Vendor Details</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+      <label>VendorName</label>
+      <br>
+      <input type="text" name="username" placeholder="Enter your Name" required>
+      <br>
+    </div>
+  
+    <div class="form-group">
+      <label>Vendor Email</label>
+      <br>
+      <input type="email" name="email" placeholder="Enter your Email" required>
+      <br>
+    </div>
+  
+    <div class="form-group">
+      <label>Vendor Phone</label>
+      <br>
+      <input type="number" name="number" placeholder="Enter your Number" required>
+      <br>
+    </div>
+  
+    <div class="form-group">
+        <label for="vendor_id">Vendor ID</label>
+        <br>
+        <select name="vendor_id" id="vendor_id" required>
+            <option value="">Select Vendor ID</option>
+            <option value="VND001">aadhar card</option>
+            <option value="VND002">pan card</option>
+            <option value="VND003">VND003</option>
+            <option value="VND004">VND004</option>
+        </select>
+        <br>
+    </div>
+      
+      <input type="submit" name="submit" value="Submit" class="btn">
+    </form>
+  </div>
+
+
+
+</body>
+</html>
+
+
+
+<!-- <?php ?> -->
